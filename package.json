@@ -1,27 +1,24 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
-  "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "name": "node-vk-bot",
+  "version": "1.0.0",
+  "repository": "https://github.com/pepelatz/node-vk-bot.git",
+  "author": "Vlad Zadvorny <vladzadvorny@icloud.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "nodemon": "^1.17.5"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3"
   },
   "engines": {
-    "node": "8.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+    "node": ">=9.0.0"
+  }
 }
