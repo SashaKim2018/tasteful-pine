@@ -27,7 +27,7 @@ app.post('/', (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`Example app listening on port ${31968}!`));
+app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
 
 /*
 { type: 'message_new',
